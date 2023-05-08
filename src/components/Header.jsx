@@ -1,11 +1,12 @@
 import styles from "./Header.module.css";
+import { Rocket } from "phosphor-react";
 
-import igniteLogo from '../assets/ignite-logo.svg'
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <img src={igniteLogo} alt="Logotipo Ignite" /> 
+      <Rocket size={42} alt="Logotipo Ignite" /> 
+      <p>Ignite Feed</p>
     </header>
   );
 }
